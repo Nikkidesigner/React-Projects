@@ -1,0 +1,59 @@
+.profile-info h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .profile-info form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    outline: none;
+  }
+  
+  .flexSB input:nth-child(1) {
+    margin-right: 10px;
+  }
+  
+  .primary-btn {
+    background-color: #1eb2a6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logout-section {
+    margin-top: 30px;
+  }
+  
+  .logout-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logout-btn svg {
+    fill: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .profile-info {
+      padding: 30px;
+    }
+  
+    .flexSB {
+      flex-direction: column;
+    }
+  
+    .flexSB input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
