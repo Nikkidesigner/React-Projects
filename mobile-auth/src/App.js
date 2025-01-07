@@ -45,7 +45,7 @@ const App = () => {
         window.confirmationResult = confirmationResult;
         setLoading(false);
         setShowOTP(true);
-        toast.success("OTP sended successfully!");
+        toast.success("OTP sent successfully!");
       })
       .catch((error) => {
         console.log(error);
@@ -76,7 +76,16 @@ const App = () => {
       ></div>
       <div className="relative z-10 w-80 flex flex-col gap-4 rounded-lg p-8 bg-white bg-opacity-30 shadow-xl backdrop-blur-sm">
         <Toaster toastOptions={{ duration: 2500 }} />
-        <div id="recaptcha-container"></div>
+        <div
+          id="recaptcha-container"
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            zIndex: -1,
+            opacity: 0,
+          }}
+        ></div>
         {user ? (
           <h2 className="text-center text-black font-medium text-2xl">
             😊 Welcome Back 😊
