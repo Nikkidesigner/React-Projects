@@ -1,4 +1,4 @@
-![Preview Image 1](public/welcome.jpeg) <!-- Replace with the actual path -->
+![Preview Image 1](mobile-auth/public/welcome.JPG) <!-- Replace with the actual path -->
 ![Preview Image 2](public/images/localhost_3000_2.png) <!-- Replace with the actual path -->
 
 
