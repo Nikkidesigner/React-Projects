@@ -1,6 +1,5 @@
-![localhost_3000_ (1)]([https://user-images.githubusercontent.com/75136330/212552633-fe138d61-89da-4ece-9497-a6c779e50f33.png](https://github.com/Nikkidesigner/React-Projects/blob/main/mobile-auth/public/welcome.JPG?raw=true))
-
-![localhost_3000_ (2)](https://user-images.githubusercontent.com/75136330/212552636-ad154d82-2358-4de7-b6b5-c6e68c8b918e.png)
+![Preview Image 1](public/welcome.jpeg) <!-- Replace with the actual path -->
+![Preview Image 2](public/images/localhost_3000_2.png) <!-- Replace with the actual path -->
 
 
 # Getting Started with Create React App
