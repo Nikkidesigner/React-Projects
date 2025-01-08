@@ -1,5 +1,6 @@
-![Preview Image 1](mobile-auth/public/welcome.JPG) <!-- Replace with the actual path -->
-![Preview Image 2](public/images/localhost_3000_2.png) <!-- Replace with the actual path -->
+![Image 1]([https://raw.githubusercontent.com/<username>/<repository>/<branch>/public/images/image1.png](https://github.com/Nikkidesigner/React-Projects/blob/2945a220f121effb9e9fe842ca770c6e99d2349d/mobile-auth/public/welcome.JPG))
+![Image 2](https://raw.githubusercontent.com/<username>/<repository>/<branch>/public/images/image2.png)
+
 
 
 # Getting Started with Create React App
