@@ -1,4 +1,4 @@
-![Image 1](https://raw.githubusercontent.com/<username>/<repository>/<branch>/public/images/image1.png](https://github.com/Nikkidesigner/React-Projects/blob/2945a220f121effb9e9fe842ca770c6e99d2349d/mobile-auth/public/welcome.JPG))
+![Login Success](https://raw.githubusercontent.com/Nikkidesigner/React-Projects/blob/main/mobile-auth/public/welcome.JPG)
 ![Image 2](https://raw.githubusercontent.com/<username>/<repository>/<branch>/public/images/image2.png)
 
 
