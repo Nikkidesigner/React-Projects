@@ -76,28 +76,19 @@ const App = () => {
       ></div>
       <div className="relative z-10 w-80 flex flex-col gap-4 rounded-lg p-8 bg-white bg-opacity-30 shadow-xl backdrop-blur-sm">
         <Toaster toastOptions={{ duration: 2500 }} />
-        <div
-          id="recaptcha-container"
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            zIndex: -1,
-            opacity: 0,
-          }}
-        ></div>
+        <div id="recaptcha-container" style={{ position: 'absolute', bottom: 0, left: 0, zIndex: -1, opacity: 0 }}></div>
         {user ? (
           <h2 className="text-center text-black font-medium text-2xl">
             😊 Welcome Back 😊
           </h2>
         ) : (
           <div className=" flex flex-col gap-4 rounded-lg p-4">
-            <h1 className="text-center leading-normal text-black font-medium text-3xl mb-6">
+            <h1 className="text-center leading-normal text-black font-medium text-4xl mb-5">
               Welcome <br /> Buddy
             </h1>
             {showOTP ? (
               <>
-                <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
+                <div className="bg-white text-blue-500 w-fit mx-auto p-4 rounded-full">
                   <BsFillShieldLockFill size={30} />
                 </div>
                 <label
@@ -117,7 +108,7 @@ const App = () => {
                 ></OtpInput>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-blue-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
