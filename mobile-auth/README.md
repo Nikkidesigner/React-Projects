@@ -1,6 +1,9 @@
 ![Login Success](https://raw.githubusercontent.com/Nikkidesigner/React-Projects/main/mobile-auth/public/welcome.JPG)
 
-![Image 2](https://raw.githubusercontent.com/<username>/<repository>/<branch>/public/images/image2.png)
+![OTP Verify](https://raw.githubusercontent.com/Nikkidesigner/React-Projects/main/mobile-auth/public/otpverify.JPG)
+
+![Login Successfully](https://raw.githubusercontent.com/Nikkidesigner/React-Projects/main/mobile-auth/public/loginsuccessfully.JPG)
+
 
 
 
