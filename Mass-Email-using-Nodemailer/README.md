@@ -39,7 +39,6 @@ Run the following command to install all the necessary dependencies.
 Create a .env file in the root directory of your project and add your Gmail credentials:
 
 MAIL_USER=your-email@gmail.com
-
 MAIL_PASS=your-email-password
 
 Security Tip: Do not commit your .env file to Git. This is where sensitive data is stored, such as your email credentials. It should always be added to .gitignore.
