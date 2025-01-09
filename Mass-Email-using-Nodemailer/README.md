@@ -32,7 +32,7 @@ cd React-Projects/Mass-Email-using-Nodemailer
 
 Run the following command to install all the necessary dependencies.
 
-### npm install
+## npm install
 
 ### Step 3: Configure the .env File
 
@@ -48,14 +48,17 @@ Security Tip: Do not commit your .env file to Git. This is where sensitive data 
 
 Modify the recipients.json file to include the email addresses of the recipients:
 
-json
-Copy code
 [
+
 "recipient1@example.com",
+
 "recipient2@example.com",
+
 "recipient3@example.com"
+
 ]
-You can add as many email addresses as needed, separated by commas.
+
+-**You can add as many email addresses as needed, separated by commas.**
 
 ### Step 5: Create Handlebars Template
 
