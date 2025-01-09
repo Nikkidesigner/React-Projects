@@ -64,6 +64,8 @@ Modify the recipients.json file to include the email addresses of the recipients
 
 -**You can add as many email addresses as needed, separated by commas.**
 
+##
+
 ### Step 5: Create Handlebars Template
 
 Ensure you have a welcomeMessage.hbs template inside the views folder, which will be used to render the email content. You can customize this template with dynamic variables and HTML content.
