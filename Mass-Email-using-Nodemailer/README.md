@@ -28,6 +28,8 @@ git clone https://github.com/Nikkidesigner/React-Projects.git
 
 cd React-Projects/Mass-Email-using-Nodemailer
 
+##
+
 ### Step 2: Install Dependencies
 
 Run the following command to install all the necessary dependencies.
@@ -39,9 +41,12 @@ Run the following command to install all the necessary dependencies.
 Create a .env file in the root directory of your project and add your Gmail credentials:
 
 MAIL_USER=your-email@gmail.com
+
 MAIL_PASS=your-email-password
 
 Security Tip: Do not commit your .env file to Git. This is where sensitive data is stored, such as your email credentials. It should always be added to .gitignore.
+
+##
 
 ### Step 4: Set Up Recipients List
 
@@ -62,6 +67,8 @@ Modify the recipients.json file to include the email addresses of the recipients
 ### Step 5: Create Handlebars Template
 
 Ensure you have a welcomeMessage.hbs template inside the views folder, which will be used to render the email content. You can customize this template with dynamic variables and HTML content.
+
+##
 
 ### Step 6: Run the Application
 
