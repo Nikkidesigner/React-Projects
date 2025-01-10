@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.input-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #3498db;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.dynamic-inputs {
+  margin-bottom: 15px;
+}
+
+.input-group {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+
+
+  /* General Preview Styles */
+.preview-content {
+  line-height: 1.8;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.preview-section h2 {
+  color: #2980b9;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.preview-section h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.preview-section p {
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #2c3e50;
+}
+
+.preview-section ul {
+  list-style: square;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+}
+
+.preview-section li {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+/* Print Button */
+.print-btn {
+  background-color: #1abc9c;
+  margin-top: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.print-btn:hover {
+  background-color: #16a085;
+}
+
+
+/* Print-Specific Styles */
+@media print {
+  @page {
+    margin: 15mm; /* Adjust margin as per requirement */
+    size: auto; /* Ensure the page size is automatically adjusted */
+    border: 1px solid #3498db; /* Blue border for each page */
+    border-radius: 10px; /* Optional: curved corners */
+  }
+
+  /* Reset body and HTML margins */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide input section during print */
+  .input-section {
+    display: none;
+  }
+
+  /* Ensure preview section has no border during print */
+  .preview-section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove border */
+    page-break-before: auto;
+    background-color: #ffffff;
+    color: black;
+  }
+
+  /* Reset any borders in preview content */
+  .preview-content {
+    margin: 0;
+    border: none; /* Remove border if any */
+  }
+
+  /* Hide other non-essential elements during print */
+  h1,
+  h2.resume-preview-text,
+  button.print-btn {
+    display: none;
+  }
+
+  /* Apply custom styles for visibility during print */
+  .preview-section .fullName {
+    font-size: 2em; /* Increase font size for visibility */
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .preview-section {
+    margin-top: 20px;
+  }
+}
+
+
+
+/*styling for socials*/
+/* Styling for Social Links */
+.preview-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.preview-section li {
+  margin-bottom: 5px;
+}
+
+.preview-section a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.preview-section a:hover {
+  text-decoration: underline;
+}
+

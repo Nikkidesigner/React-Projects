@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Dynamic Resume Builder</h1>
+    <div class="container">
+      <div class="input-section">
+        <div class="section">
+          <h2 class="section-title">Personal Information</h2>
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="tel" id="phone" placeholder="Phone" />
+          <input type="text" id="location" placeholder="Location" />
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Professional Summary</h2>
+          <textarea
+            id="summary"
+            placeholder="Write a brief professional summary..."
+          ></textarea>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Work Experience</h2>
+          <div id="experienceInputs" class="dynamic-inputs"></div>
+          <button onclick="addExperience()">Add Experience</button>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Education</h2>
+          <div id="educationInputs" class="dynamic-inputs"></div>
+          <button onclick="addEducation()">Add Education</button>
+        </div>
+         
+        <div class="section">
+          <h2 class="section-title">Skills</h2>
+          <div id="skillsInputs" class="dynamic-inputs"></div>
+          <button onclick="addSkill()">Add Skill</button>
+        </div>
+        
+
+        <div class="section">
+          <h2 class="section-title">Certifications</h2>
+          <div id="certificationInputs" class="dynamic-inputs"></div>
+          <button onclick="addCertification()">Add Certification</button>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Projects</h2>
+          <div id="projectInputs" class="dynamic-inputs"></div>
+          <button onclick="addProject()">Add Project</button>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Social Links</h2>
+          <div id="socialInputs" class="dynamic-inputs"></div>
+          <button onclick="addSocial()">Add Social</button>
+        </div>
+        
+        <button onclick="generateResume()" class="print-btn">
+          Generate Resume
+        </button>
+      </div>
+
+      <div class="preview-section">
+        <h2 class="resume-preview-text">Preview</h2>
+        <div id="resumePreview" class="preview-content"></div>
+        <button onclick="window.print()" class="print-btn">Print Resume</button>
+      </div>
+    </div>
+  </body>
+</html>
