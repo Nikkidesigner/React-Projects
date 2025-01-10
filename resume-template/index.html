@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="profile">
+            <!-- Profile Image -->
+            <label for="image-upload" id="profile-img-container">
+                <img id="profile-img" src="Nikhil_Pawar.jpg" alt="Nikhil Pawar">
+            </label>
+            <div>
+                <h1 class="editable">Nikhil Rajesh Pawar</h1>
+                <p><h3>Bachelor of Technology in Computer Science and Engineering</h3></p>
+                <ul>
+                    <li>Phone: +91-9322242494</li>
+                    <li>Email: <a href="mailto:nrpawar9756@gmail.com">nrpawar9756@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/Nikkidesigner" target="_blank">https://github.com/Nikkidesigner</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/nikhil-pawar-2806a722a/" target="_blank">nikhil-pawar-2806a722a</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Hidden file input for uploading a new image -->
+        <input type="file" id="image-upload" accept="image/*" style="display:none;">
+    </header>
+    
+
+    <main>
+        <section>
+            <h2 class="editable">Technical Skills and Interests</h2>
+            <ul>
+                <li class="editable"><strong>Languages:</strong> C/C++, Java, JavaScript</li>
+                <li class="editable"><strong>Web Development:</strong> React, Node.js, HTML, CSS, Express.js</li>
+                <li class="editable"><strong>Version Control:</strong> Git, GitHub</li>
+                <li class="editable"><strong>Databases:</strong> MongoDB, MySQL</li>
+                <li class="editable"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Operating Systems</li>
+                <li class="editable"><strong>Soft Skills:</strong> Problem Solving, Self-learning, Communication</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="editable">Internship</h2>
+            <p class="editable"><strong>Sunbeam IT Park</strong> (Hinjawadi, Pune) - Web Developer Intern, June 2024</p>
+            <ul>
+                <li class="editable">Completed Industrial Training in Web Programming with Node.js under Sunbeam.</li>
+                <li class="editable">Developed RESTful APIs for scalable web applications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="editable"><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project">
+                <h3 class="editable"><a href="https://github.com/Nikkidesigner/Mega_Pro.git" target="_blank" class="editable">Marks-Entry-App</a></h3>
+                <p class="editable"><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MySQL</p>
+                <ul>
+                    <li class="editable">Developed a full-stack web app for student marks management with secure JWT-based authentication.</li>
+                    <li class="editable">Implemented robust database management and RESTful APIs for seamless operation.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3 class="editable"><a href="https://github.com/Nikkidesigner/SkillupPlacement.git" target="_blank" class="editable">SkillupPlacement</a></h3>
+                <p class="editable"><strong>Technologies:</strong> MERN Stack (MongoDB, Express, React, Node.js)</p>
+                <ul>
+                    <li class="editable">Designed a placement portal with profile management, exam-taking, and results analysis features.</li>
+                    <li class="editable">Optimized MongoDB for efficient data storage and retrieval processes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="editable">Education</h2>
+            <ul>
+                <li class="editable"><strong>Dr. Daulatrao Aher College of Engineering:</strong> B.Tech in CSE (2021-2025) - 80.13%</li>
+                <li class="editable"><strong>Brilliant Academy Junior College:</strong> H.S.C. (2019-2021) - 88.50%</li>
+                <li class="editable"><strong>Atmaram Vidyamandir Ogalewadi:</strong> S.S.C. (2018-2019) - 89.80%</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="editable">Certifications</h2>
+            <ul>
+                <li class="editable">Real-time Product Development using AR, VR, and IoT</li>
+                <li class="editable">Artificial Intelligence through IBM SkillsBuild</li>
+                <li class="editable">Cybersecurity and Ethical Hacking</li>
+            </ul>
+        </section>
+    </main>
+    <script src="download.js"></script>
+    
+
+
+</body>
+</html>

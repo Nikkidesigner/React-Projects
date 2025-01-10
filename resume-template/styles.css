@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 11px;
+    background: rgb(229,232,251);
+    background: radial-gradient(circle, rgba(229,232,251,1) 0%, rgba(255,249,250,1) 100%);
+}
+
+
+/* new header a4 */
+/* Header Styling */
+header {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 210mm; /* A4 width */
+    margin: 0 auto; /* Center the header within the A4 layout */
+    box-sizing: border-box;
+}
+
+header img {
+    width: 150px;
+    border-radius: 5%;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size:1rem;
+}
+
+header ul li {
+    margin: 5px 0;
+}
+
+
+/* General Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    font-size:large;
+}
+
+/* Section Title Styles */
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Unordered List Styling */
+section ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+section ul li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Project Block Specific Styling */
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Project Title Styling */
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project h3 a:hover {
+    color: #007BFF;
+}
+
+/* Styling for Internship Description */
+section p {
+    margin: 5px 0 15px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Certification Section Specific Styles */
+section ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Hover Effect for Section Backgrounds */
+section:hover {
+    background-color: #eef7ff;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/*a4 format */
+/* A4 Page Setup */
+@page {
+    size: A4;
+    margin: 20mm; /* Default print margin */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    background: #fff;
+    color: #000;
+}
+
+/* Main Resume Layout */
+main {
+    width: 100%;
+    max-width: 210mm; /* A4 width */
+    min-height: 297mm; /* A4 height */
+    margin: 0 auto;
+    padding: 20mm;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* For better screen preview */
+    box-sizing: border-box;
+}
+
+/* Section Styling for Print */
+section {
+    page-break-inside: avoid; /* Prevents sections from breaking across pages */
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section ul,
+section p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Project Block Specific Styles */
+.project {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Links Styling for Print */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bullet Point Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer Style for Print */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 10px;
+    color: #666;
+}
+
+ /* Styling for editable sections */
+ .editable {
+    padding: 5px;
+    min-height: 20px;
+    outline: none; /* Removes the dotted outline */
+    border: none; /* Removes any border */
+}
+
+.editable:hover {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+
+.editable:empty:before {
+    content: "Click to edit...";
+    color: #aaa;
+}
+
+
+/*profile image */
+/* Style for the profile image */
+#profile-img-container {
+    cursor: pointer;
+}
+
+#profile-img-container:hover {
+    opacity: 0.7;
+}
+
+/* Styling the profile image */
+#profile-img {
+    width: 150px;
+    border-radius: 5%;
+    transition: opacity 0.3s ease;
+}
