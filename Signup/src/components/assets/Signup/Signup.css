@@ -1,23 +1,23 @@
 /* General Reset for Consistency */
 /* In your signup page's CSS (e.g., Signup.css) */
 body {
-    height: 100vh;
-    background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #ff6b6b, #cee5f1);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
-  }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
   
 * {
     margin: 0;
@@ -30,7 +30,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   /* Container Styling */
