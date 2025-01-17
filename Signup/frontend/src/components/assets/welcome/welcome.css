@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #51edc9);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  .welcome-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  
+  .welcome-actions {
+    margin: 20px 0;
+  }
+  
+  .welcome-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: #000000; /* Black background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #333333;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: #000000; /* Black background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #333333;
+  }
+  
+  .welcome-footer p {
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .welcome-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .welcome-footer ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
