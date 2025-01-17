@@ -67,6 +67,7 @@ body {
   .input-group {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
     background: #f9f9f9; /* Light gray input background */
     border: 1px solid #cccccc;
     border-radius: 4px;
@@ -94,12 +95,12 @@ body {
   }
   
   /* Button Styling */
-  .Signup-button {
+  .login-button {
     text-align: center;
     margin-top: 20px;
   }
   
-  .Signup-button button {
+  .login-button button {
     padding: 10px 20px;
     font-size: 16px;
     color: #ffffff; /* White text */
@@ -110,9 +111,10 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  .Signup-button button:hover {
+  .login-button button:hover {
     background-color: #333333; /* Slightly lighter black on hover */
   }
+  
   .error-message {
     color: red;
     font-size: 0.9em;
@@ -128,7 +130,17 @@ body {
   animation: fadeIn 1s ease-in-out forwards, typewriter 3s steps(20) 1s forwards;
   }
 
-
+.login-actions
+{
+  margin-top: 15px;
+  padding: 3px;
+}
+.forgot-pass
+{
+  margin-top: 15px;
+  padding: 3px;
+  font-size: 1rem;
+}
   @keyframes fadeIn {
     from {
       opacity: 0;

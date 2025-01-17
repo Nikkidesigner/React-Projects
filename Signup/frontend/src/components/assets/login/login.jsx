@@ -80,16 +80,8 @@ const Login = () => {
         {error && <div className="error-message">{error}</div>}
 
         <div className="login-actions">
-          <a href="/signup" className="signup-link">
-            New User? Sign Up Now
-          </a>
-          <p>
-            <a href="/forgot-password" className="forgot-password">
-              Forgot Password?
-            </a>
-          </p>
+       <p> New user? <a href="/signup" className="login-link">Sign up</a> now!</p>
         </div>
-
         <div className="login-button">
           <button type="submit">Login</button>
         </div>

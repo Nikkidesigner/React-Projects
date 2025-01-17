@@ -1,7 +1,7 @@
 /* General Reset for Consistency */
 /* In your signup page's CSS (e.g., Signup.css) */
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #51edc9);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
 	height: 100vh
@@ -67,6 +67,7 @@ body {
   .input-group {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
     background: #f9f9f9; /* Light gray input background */
     border: 1px solid #cccccc;
     border-radius: 4px;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Signup.css";
 import { validateSignupForm } from "./validation";
-
+import { useNavigate } from "react-router-dom";
 import user_icon from "../images/user.png";
 import email_icon from "../images/email.png";
 import password_icon from "../images/password.png";
@@ -17,7 +17,7 @@ const Signup = () => {
   });
 
   const [errors, setErrors] = useState({});
-
+  const navigate = useNavigate(); 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -48,6 +48,7 @@ const Signup = () => {
           const result = await response.json();
           console.log("Success:", result);
           alert("Signup successful!");
+          navigate("/login");
 
           // Clear the form after successful submission
           setFormData({
@@ -153,7 +154,7 @@ const Signup = () => {
       </form>
       <div className="signup-footer">
   <p>
-    Already a user? <a href="/login" className="login-link">Login</a>
+    Already a user? <a href="/login" className="login-link">Login</a> now!
   </p>
 </div>
 
