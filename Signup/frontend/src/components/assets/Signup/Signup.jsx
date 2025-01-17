@@ -33,13 +33,16 @@ const Signup = () => {
       setErrors({});
       try {
         // Make a POST request to the backend API
-        const response = await fetch("http://localhost:5000/api/signup", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "https://backend-inky-iota.vercel.app/api/signup",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
         if (response.ok) {
           const result = await response.json();
@@ -83,7 +86,9 @@ const Signup = () => {
             value={formData.username}
             onChange={handleChange}
           />
-          {errors.username && <div className="error-message">{errors.username}</div>}
+          {errors.username && (
+            <div className="error-message">{errors.username}</div>
+          )}
         </div>
 
         <div className="input-group">
@@ -119,7 +124,9 @@ const Signup = () => {
             value={formData.password}
             onChange={handleChange}
           />
-          {errors.password && <div className="error-message">{errors.password}</div>}
+          {errors.password && (
+            <div className="error-message">{errors.password}</div>
+          )}
         </div>
 
         <div className="input-group">
@@ -144,6 +151,12 @@ const Signup = () => {
           <button type="submit">Sign Up</button>
         </div>
       </form>
+      <div className="signup-footer">
+  <p>
+    Already a user? <a href="/login" className="login-link">Login</a>
+  </p>
+</div>
+
     </div>
   );
 };
