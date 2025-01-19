@@ -47,7 +47,7 @@ const Signup = () => {
         if (response.ok) {
           const result = await response.json();
           console.log("Success:", result);
-          alert("Signup successful!");
+          alert("Signup successful! Please login.");
           navigate("/login");
 
           // Clear the form after successful submission

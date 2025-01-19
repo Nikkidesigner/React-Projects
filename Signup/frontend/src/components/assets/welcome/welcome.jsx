@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./welcome.css";
 import { useNavigate } from "react-router-dom";
 
 const Welcome = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/homepage"); // Redirect logged-in users to homepage
+    }
+  }, [navigate]);
+  
   return (
     <div className="welcome-container">
       <div className="welcome-header">

@@ -19,10 +19,9 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //need to make changes here when uploading to the vercel
+    console.log("Login form data:", formData); // Log the form data
     try {
-      const response = await fetch(
-        "https://backend-inky-iota.vercel.app/api/login",
+      const response = await fetch("https://backend-inky-iota.vercel.app/api/login",
         {
           method: "POST",
           headers: {
@@ -36,8 +35,12 @@ const Login = () => {
         const result = await response.json();
         console.log("Login successful:", result);
         alert("Login successful!");
+
+        // Store the token in localStorage
+        localStorage.setItem("token", result.token);
         navigate("/homepage"); //redirect to homepage
-      } else {
+      } 
+      else {
         const error = await response.json();
         setError(error.error || "Login failed!");
       }
@@ -80,7 +83,14 @@ const Login = () => {
         {error && <div className="error-message">{error}</div>}
 
         <div className="login-actions">
-       <p> New user? <a href="/signup" className="login-link">Sign up</a> now!</p>
+          <p>
+            {" "}
+            New user?{" "}
+            <a href="/signup" className="login-link">
+              Sign up
+            </a>{" "}
+            now!
+          </p>
         </div>
         <div className="login-button">
           <button type="submit">Login</button>
