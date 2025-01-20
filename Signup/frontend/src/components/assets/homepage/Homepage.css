@@ -42,7 +42,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and title */
+ justify-content: space-between; /* Space between logo and title */
   background: rgba(255, 255, 255, 0.9); /* Transparent background */
   padding: 10px 15px; /* Adjusted padding */
   position: fixed;
@@ -55,7 +55,9 @@ body {
 .homepage-logo {
   height: 40px; /* Decreased size */
 }
-
+.homepage-logo-link {
+  display: inline-block; /* Makes the link behave like a block element */
+}
 .homepage-title {
   font-size: 1.5rem; /* Decreased size */
   font-weight: bold;

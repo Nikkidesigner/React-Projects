@@ -18,42 +18,42 @@ const Homepage = () => {
     {
       title: "React Projects",
       image: reactImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/React-Projects",
     },
     {
       title: "Advanced Database Systems",
       image: dbImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/Advanced-database-system",
     },
     {
       title: "Problems on Array in Java",
       image: arrayImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/problems-on-array-java-",
     },
     {
       title: "GFG - Top 50 String Coding Problems",
       image: gfgImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/GFG-Top-50-String-Coding-Problems-for-Interviews-solutions",
     },
     {
       title: "Beginner Level Problems in Java",
       image: beginnerImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/Beginner-level-problems-java-",
     },
     {
       title: "Academic Notes",
       image: notesImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/Academic-Notes",
     },
     {
       title: "DSA in Java",
       image: dsaImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/DSA-in-java",
     },
     {
       title: "JavaScript Tutorials",
       image: jsImg,
-      link: "#",
+      link: "https://github.com/Nikkidesigner/javascript-fundamentals",
     },
   ]);
 
@@ -93,7 +93,9 @@ const Homepage = () => {
   return (
     <div className="user-homepage">
       <header className="homepage-header">
+      <a href="https://frontend-kappa-nine-74.vercel.app/homepage" className="homepage-logo-link">
         <img src={logo} alt="Logo" className="homepage-logo" />
+      </a>
         <h1 className="homepage-title">CodewidNikki</h1>
         <button className="logout-button" onClick={handleLogout}>
           Logout
