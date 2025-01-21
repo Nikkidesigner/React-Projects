@@ -135,7 +135,7 @@ body {
 }
 
 /* Logout button styles */
-.logout-button {
+.profile-button {
   padding: 8px 15px; /* Decreased size */
   font-size: 14px; /* Decreased size */
   color: #ffffff; /* White text */
@@ -146,8 +146,8 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.logout-button:hover {
-  background-color: #e63939;
+.profile-button:hover {
+  background-color: #333333;
 }
 
 /* Responsive Design */

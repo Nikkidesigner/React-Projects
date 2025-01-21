@@ -1,0 +1,61 @@
+.profile-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit:cover;
+  }
+  
+  .profile-details {
+    font-size: 18px;
+  }
+  
+  /* Logout button styles */
+.logout-button {
+  padding: 8px 15px; /* Decreased size */
+  font-size: 14px; /* Decreased size */
+  color: #ffffff; /* White text */
+  background-color: #000000; /* Black background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e63939;
+}
+/* Header styles */
+.homepage-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: space-between; /* Space between logo and title */
+  background: rgba(255, 255, 255, 0.9); /* Transparent background */
+  padding: 10px 15px; /* Adjusted padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.homepage-logo {
+  height: 40px; /* Decreased size */
+}
+.homepage-logo-link {
+  display: inline-block; /* Makes the link behave like a block element */
+}
+.homepage-title {
+  font-size: 1.5rem; /* Decreased size */
+  font-weight: bold;
+  color: #444;
+}

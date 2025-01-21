@@ -14,61 +14,61 @@ const Signup = () => {
     phone: "",
     password: "",
     confirmPassword: "",
+    profilePicture: null, // Add this line
   });
 
   const [errors, setErrors] = useState({});
   const navigate = useNavigate(); 
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, files } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: files ? files[0] : value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Validate the form
+  
+    // Validate the form data
     const validationErrors = validateSignupForm(formData);
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-    } else {
-      setErrors({});
-      try {
-        // Make a POST request to the backend API
-        const response = await fetch(
-          "https://backend-inky-iota.vercel.app/api/signup",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          }
-        );
-
-        if (response.ok) {
-          const result = await response.json();
-          console.log("Success:", result);
-          alert("Signup successful! Please login.");
-          navigate("/login");
-
-          // Clear the form after successful submission
-          setFormData({
-            username: "",
-            email: "",
-            phone: "",
-            password: "",
-            confirmPassword: "",
-          });
-        } else {
-          const error = await response.json();
-          console.error("Error:", error);
-          alert(error.error || "Signup failed!");
-        }
-      } catch (err) {
-        console.error("Request error:", err);
-        alert("An error occurred. Please try again.");
+      setErrors(validationErrors); // Display validation errors
+      return;
+    }
+  
+    // Prepare the FormData object
+    const data = new FormData();
+    data.append("username", formData.username);
+    data.append("email", formData.email);
+    data.append("phone", formData.phone);
+    data.append("password", formData.password);
+    if (formData.profilePicture) {
+      data.append("profilePicture", formData.profilePicture);
+    }
+  
+    try {
+      const response = await fetch("https://backend-inky-iota.vercel.app/api/signup", {
+        method: "POST",
+        body: data,
+      });
+  
+      if (!response.ok) {
+        // If response status is not ok, handle errors
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
+  
+      // On success, navigate to login
+      const result = await response.json();
+      console.log("Signup successful:", result);
+      navigate("/login");
+    } catch (err) {
+      console.error("Error during signup:", err);
+      setErrors({ server: "Something went wrong. Please try again later." });
     }
   };
+  
 
   return (
     <div className="container">
@@ -115,6 +115,25 @@ const Signup = () => {
           />
           {errors.phone && <div className="error-message">{errors.phone}</div>}
         </div>
+        
+        <div className="input-group">
+
+  <label htmlFor="profilePicture" className="file-label">
+    <img src={user_icon} alt="Profile Icon" className="input-icon" />
+    <span>Upload Profile Picture</span>
+  </label>
+  <input
+    type="file"
+    id="profilePicture"
+    name="profilePicture"
+    accept="image/*"
+    onChange={handleChange}
+    className="file-input"
+  />
+  {errors.profilePicture && (
+    <div className="error-message">{errors.profilePicture}</div>
+  )}
+</div>
 
         <div className="input-group">
           <img src={password_icon} alt="Password Icon" className="input-icon" />

@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   phone: { type: String, required: true, unique: true },
   password: { type: String, required: true },
+  profileImage: { type: String }, // New field for storing Cloudinary URL
 });
 
 // Pre-save middleware to hash the password before saving the user

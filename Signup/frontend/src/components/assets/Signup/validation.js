@@ -35,7 +35,11 @@ export function validateSignupForm(formData) {
     } else if (formData.password !== formData.confirmPassword) {
       errors.confirmPassword = "Passwords do not match";
     }
+
+  if (!formData.profilePicture) {
+    errors.profilePicture = "Profile picture is required.";
+  }
   
     return errors;
-  }
+  };
   

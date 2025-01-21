@@ -14,6 +14,40 @@ import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const navigate = useNavigate();
+  
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      alert("Please login to access the homepage.");
+      navigate("/login"); // Redirect to login if no token
+    } else {
+      fetch("https://backend-inky-iota.vercel.app/api/verify-token", {
+        headers: {
+          Authorization: `Bearer ${token}`, // Send the token in headers
+        },
+      })
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error("Token invalid or expired");
+          }
+          return res.json();
+        })
+        .then(() => console.log("Token verified"))
+        .catch((err) => {
+          console.error(err);
+          alert("Session expired. Please login again.");
+          localStorage.removeItem("token"); // Clear token
+          navigate("/login");
+        });
+    }
+  }, [navigate]);
+  
+  const handleProfileClick = () => {
+    navigate("/profile"); // Redirect to profile page
+  };
+
+
   const [tiles] = useState([
     {
       title: "React Projects",
@@ -57,50 +91,19 @@ const Homepage = () => {
     },
   ]);
 
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-
-    if (!token) {
-      alert("Please login to access the homepage.");
-      navigate("/login"); // Redirect to login if no token
-    } else {
-      fetch("https://backend-inky-iota.vercel.app/api/verify-token", {
-        headers: {
-          Authorization: `Bearer ${token}`, // Send the token in headers
-        },
-      })
-        .then((res) => {
-          if (!res.ok) {
-            throw new Error("Token invalid or expired");
-          }
-          return res.json();
-        })
-        .then(() => console.log("Token verified"))
-        .catch((err) => {
-          console.error(err);
-          alert("Session expired. Please login again.");
-          localStorage.removeItem("token"); // Clear token
-          navigate("/login");
-        });
-    }
-  }, [navigate]);
-
-  const handleLogout = () => {
-    localStorage.removeItem("token"); // Remove token from localStorage
-    navigate("/login"); // Redirect to login page
-  };
 
   return (
     <div className="user-homepage">
       <header className="homepage-header">
-      <a href="https://frontend-kappa-nine-74.vercel.app/homepage" className="homepage-logo-link">
-        <img src={logo} alt="Logo" className="homepage-logo" />
-      </a>
-        <h1 className="homepage-title">CodewidNikki</h1>
-        <button className="logout-button" onClick={handleLogout}>
-          Logout
-        </button>
-      </header>
+  <a href="/homepage" className="homepage-logo-link">
+    <img src={logo} alt="Logo" className="homepage-logo" />
+  </a>
+  <h1 className="homepage-title">CodewidNikki</h1>
+  <div className="header-actions">
+  <button className="profile-button" onClick={handleProfileClick}>My Profile</button>
+  </div>
+</header>
+
 
       <main className="homepage-main">
         <h2 className="homepage-welcome">Welcome to CodewidNikki!</h2>
