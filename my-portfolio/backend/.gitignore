@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Vercel configuration
+.vercel/
+
+# OS-specific files
+.DS_Store
+
+# Dependency directories
+.nyc_output/
+coverage/
+.vercel

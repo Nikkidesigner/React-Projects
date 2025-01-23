@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { MdOutlineMailOutline } from "react-icons/md";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -102,6 +103,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+
+              >
+                <MdOutlineMailOutline style={{ marginBottom: "2px" }} /> Contact
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Nikkidesigner/"

@@ -140,29 +140,56 @@ body {
   }
   
   
-  
   /* Responsive Design */
-  @media (max-width: 768px) {
+@media (max-width: 600px) {
+.container {
+  width: 85%; /* Shrink the container */
+  padding: 20px; /* Reduce padding */
+  max-width: none; /* Prevent max-width overriding */
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow to enhance the "container" effect */
+}
+
+body {
+  padding: 0 10px; /* Ensure gradient is visible on left and right */
+}
+
+.header h1 {
+  font-size: 1.6em; /* Adjust text size for smaller screens */
+}
+
+.text {
+  font-size: 1.6rem; /* Further adjust text size */
+}
+
+
+.Signup-button button {
+  padding: 8px 15px; /* Adjust button size */
+  font-size: 14px;
+}
+}
+
+
+@media (max-width: 400px) {
   .container {
-    width: 100%;
-    padding: 20px;
+    width: 100px;
   }
 
   .header h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
-  .input-group {
-    flex-direction: row; /* Keep icon and input on the same line */
-    align-items: center;
-  }
-
-  .input-icon {
-    margin-right: 10px;
-  }
-  
   .text {
-    font-size: 2rem; /* Adjust text size for smaller screens */
+    font-size: 1.8rem; /* Adjust text size for smaller screens */
   }
+
+.text {
+  font-size: 1.6rem; /* Further adjust text size */
+}
+
+.Signup-button button {
+  padding: 8px 15px; /* Adjust button size */
+  font-size: 14px;
+}
 }
   
