@@ -11,9 +11,9 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Nikhil Pawar </span>
             from <span className="purple"> Maharashtra, India.</span>
             <br />
-            I am currently an intern at Numetry Technologies.
+           
             <br />
-            I completing my Bachelor of Technology (Btech) in <span className="purple"> Computer science and Engineering. </span>
+            I'm completing my Bachelor of Technology (Btech) in <span className="purple"> Computer science and Engineering. </span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

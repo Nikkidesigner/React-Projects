@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import auth from "../../Assets/Projects/auth.png";
+import resume from "../../Assets/Projects/resume.png";
+import guardian from "../../Assets/Projects/guardian.png";
+import skillup from "../../Assets/Projects/skillup.png";
+import marksentry from "../../Assets/Projects/marksentry.png";
 
 function Projects() {
   return (
@@ -23,68 +22,53 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={skillup}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Skillupplacement"
+              description="Skillup Placement is not just a platform but a comprehensive solution to help students advance their careers with confidence. we're centralizing everything students need in one place, from exams to study resources and placement updates."
+              ghLink="https://github.com/Nikkidesigner/SkillupPlacement"
+              demoLink="https://skillup-placement.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={marksentry}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Marks-Entry-App"
+              description="Developed a web-based application for managing student marks entry and registration using Node.js, Express, EJS, and MySQL. The project demonstrates a full-stack development approach, combining server-side logic with client-side interactivity."
+              ghLink="https://github.com/Nikkidesigner/Mega_Pro"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={guardian}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Guardian Soles"
+              description="The scope of the project encompasses designing, prototyping, and testing a wearable personal safety device that integrates GPS tracking, GSM/GPRS communication, and alerting functionalities. This includes selecting appropriate hardware components, developing embedded software for real-time location tracking."
+              ghLink="https://github.com/Nikkidesigner/Guardiansoles"         
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={auth}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Firebase Authentication"
+              description="This mini project is a Mobile Authentication System created using React, which allows users to authenticate themselves via OTP sent to their mobile number. It includes form validation, API integration for sending and verifying OTPs, and provides a secure, user-friendly interface for mobile-based login."
+              ghLink="https://github.com/Nikkidesigner/React-Projects/tree/main/mobile-auth"
+              demoLink="https://authproject-nine.vercel.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={resume}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Dynamic Resume Builder"
+              description="The Dynamic Resume Builder project is a web-based application that allows users to create professional resumes dynamically by filling out forms for sections like personal details, education, skills, and work experience."
+              ghLink="https://github.com/Nikkidesigner/React-Projects/tree/main/resume-template-version2"
+              demoLink="https://resume-template-version2.vercel.app/"     
             />
           </Col>
         </Row>

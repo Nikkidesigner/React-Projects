@@ -28,7 +28,7 @@ const Welcome = () => {
         <button onClick={() => navigate("/login")} className="welcome-button login-button">
           Login
         </button>
-        <button onClick={() => window.location.href = "https://portfolio-two-xi-59.vercel.app/"} className="welcome-button visit-button">
+        <button onClick={() => window.location.href = "https://portfolio-frontend-neon-iota.vercel.app/"} className="welcome-button visit-button">
           Visit Portfolio
         </button>
       </div>
